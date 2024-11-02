@@ -442,6 +442,8 @@ class font_patcher:
             outfile = os.path.normpath(os.path.join(
                 sanitize_filename(self.args.outputdir, True),
                 sanitize_filename(fontname) + self.args.extension))
+            print(f"outfile: {outfile}")
+            sys.exit()
             bitmaps = str()
             if len(sourceFont.bitmapSizes):
                 logger.debug("Preserving bitmaps %s", repr(sourceFont.bitmapSizes))
