@@ -10,8 +10,8 @@ script_version = "4.14.5"
 
 version = "3.2.1"
 projectName = "Nerd Fonts"
-subFamily = ""
 projectName = "Nerds"
+subFamily = ""
 projectNameAbbreviation = "NF"
 projectNameSingular = projectName[:-1]
 
@@ -442,16 +442,6 @@ class font_patcher:
             outfile = os.path.normpath(os.path.join(
                 sanitize_filename(self.args.outputdir, True),
                 sanitize_filename(fontname) + self.args.extension))
-
-            # FOR SARASA
-            outfile = os.path.normpath(
-                os.path.join(sanitize_filename(self.args.outputdir, True),
-                '-'.join(sanitize_filename(fontname).split())
-                             + '-'
-                             + get_subfamily(
-                                 sourceFont.fontname
-                                 ).replace(" ", "")
-                             + self.args.extension)).lower()
             bitmaps = str()
             if len(sourceFont.bitmapSizes):
                 logger.debug("Preserving bitmaps %s", repr(sourceFont.bitmapSizes))
@@ -783,7 +773,7 @@ class font_patcher:
             font.appendSFNTName(str('English (US)'), str('Fullname'), font.fullname)
             font.appendSFNTName(str("Chinese (PRC)"), str("Fullname"), chn(font.fullname))
 
-            if(subFamily in ["Regular", "Italic", "Bold", "Bold Italic"]):
+            if(subFamily in ["Regular", "Italic", "Bold", "BoldItalic"]):
                 font.appendSFNTName(str('English (US)'), str('Family'), font.familyname)
                 font.appendSFNTName(str('Chinese (PRC)'), str('Family'), chn(font.familyname))
                 font.appendSFNTName(str('English (US)'), str('SubFamily'), subFamily)
@@ -2233,12 +2223,7 @@ def main():
 # FOR SARASA: extract subFamily from font name
 def get_subfamily(fontname):
     segs = fontname.split('-')
-    if len([x for x in ["light", "bold"]
-            if x in segs[-2].lower()]) > 0:
-        subFamily = ' '.join(segs[-2:])
-    else:
-        subFamily = segs[-1]
-    return subFamily
+    return segs[-1]
 
 def chn(name):
     return name.replace("Sarasa Term SC", "终端更纱黑体-简")

@@ -16,8 +16,11 @@ for item in ../"$sarasa_dir"/*; do
   fi
 done
 
-echo "generating ttc from ttf"
 cd "$root_dir"
+echo "list generated ttf"
+ls $sarasa_nerd_dir/*.ttf
+
+echo "generating ttc from ttf"
 python otf2otc.py -o $sarasa_nerd_dir/SarasaTermSCNerd.ttc $sarasa_nerd_dir/SarasaTermSCNerd-*.ttf
 cd "$sarasa_nerd_dir"
 echo "creating tarball of ttf files"

@@ -33,7 +33,7 @@ jobs:
       - name: Build Nerd Font
         run: bash -xeu scripts/build
 
-      - name: Display structure of downloaded files
+      - name: Display structure of the directory
         run: ls -R
 
       - name: Upload ttc.7z
