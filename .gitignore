@@ -1,0 +1,15 @@
+# 构建中间产物（下载/解压，不是源代码）
+output/
+sarasa/
+nerd-patcher/
+font-patcher
+glyphnames.json
+bin/
+
+# 下载的归档文件
+*.7z
+*.zip
+
+# Python 字节码
+__pycache__/
+*.pyc
