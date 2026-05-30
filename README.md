@@ -1,8 +1,8 @@
 # Sarasa Term SC Nerd
 
-[更纱终端书呆黑体-简](https://github.com/be5invis/Sarasa-Gothic)与 [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) 图标合并的中文等宽字体，适用于终端和代码编辑器。
+> **本项目是 [laishulu/Sarasa-Term-SC-Nerd](https://github.com/laishulu/Sarasa-Term-SC-Nerd) 的更新版本**，使用最新的 Sarasa Gothic 和 Nerd Fonts 重新构建，原项目已停止更新。
 
-基于 [laishulu/Sarasa-Term-SC-Nerd](https://github.com/laishulu/Sarasa-Term-SC-Nerd) 的思路重建，使用最新上游版本。
+[更纱终端书呆黑体-简](https://github.com/be5invis/Sarasa-Gothic)与 [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) 图标合并的中文等宽字体，适用于终端和代码编辑器。
 
 ## 当前版本
 
