@@ -76,3 +76,7 @@
 ## 许可证
 
 [SIL Open Font License 1.1](LICENSE)
+
+---
+
+*本项目由 [Claude Code](https://claude.ai/code) 辅助生成。*
