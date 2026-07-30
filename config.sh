@@ -4,7 +4,7 @@
 
 # ── 版本号 ────────────────────────────────────────────────────────────────────
 # Sarasa Gothic 最新版本：https://github.com/be5invis/Sarasa-Gothic/releases
-SARASA_VERSION="1.0.39"
+SARASA_VERSION="1.0.40"
 
 # Nerd Fonts 最新版本：https://github.com/ryanoasis/nerd-fonts/releases
 NERD_VERSION="3.4.0"

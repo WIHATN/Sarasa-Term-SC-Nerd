@@ -8,7 +8,7 @@
 
 | 组件 | 版本 |
 |---|---|
-| Sarasa Gothic | v1.0.39 |
+| Sarasa Gothic | v1.0.40 |
 | Nerd Fonts | v3.4.0 |
 
 ## 下载安装
